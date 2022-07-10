@@ -8,6 +8,7 @@ RMI po uputstvima u nastavku teksta.
 Server prilikom pokretanja registruje udaljeni objekat za na lokalnom racunaru
 na standardnom portu pod imenom "itshop". Ovaj objekat implementira dati
 interfejs:
+
 `
 interface StoreServer {
 	public List<String> checkAvailable(String product);
@@ -15,11 +16,13 @@ interface StoreServer {
 	public void removeStore(Store store);
 }
 `
+
 `
 interface Store {
 	public int checkAvailable(String product);
 }
 `
+
 Klijent prilikom pokretanja dobavlja serverski objekat. Host i port na kojem se
 nalazi serverski objekat se zadaju preko drugog argumenta komandne linije u
 obliku "host:port". U prvom argumentu komandne linije se nalazi identifikator
