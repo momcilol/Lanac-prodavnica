@@ -49,13 +49,13 @@ deregistruje se sa servera.
 
 Klijent prepoznaje sledece komande:
 
-  ? proizvod - Ispisuje kolicinu datog proizvoda raspolozivog u prodavnici, ako
+-  ? proizvod - Ispisuje kolicinu datog proizvoda raspolozivog u prodavnici, ako
                prodavnica ima bar jedan takav proizvod. Ako prodavnica ne
                raspolaze datim proizvodom, salje upit serveru i ispisuje
                odgovor sa servera, odnosno, u kojim prodavnicama se taj
                proizvod moze pronaci.
 
-  ! proizvod - Prodaje jedan komad naznacenog proizvoda. Ako prodavnica nema
+-  ! proizvod - Prodaje jedan komad naznacenog proizvoda. Ako prodavnica nema
                dati proizvod, ispisuje poruku o gresci.
 
 Jedini argument komande predstavlja sifru zeljenog proizvoda (npr. logi-mis-m320,
