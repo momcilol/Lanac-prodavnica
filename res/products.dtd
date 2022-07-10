@@ -1,0 +1,3 @@
+<!ELEMENT magacin (proizvod*)>
+        <!ELEMENT proizvod (#PCDATA)>
+        <!ATTLIST proizvod kolicina CDATA #REQUIRED>
