@@ -9,19 +9,19 @@ Server prilikom pokretanja registruje udaljeni objekat za na lokalnom racunaru
 na standardnom portu pod imenom "itshop". Ovaj objekat implementira dati
 interfejs:  
 
-`
+```
 	interface StoreServer {  
 		public List<String> checkAvailable(String product);  
 		public void addStore(Store store);  
 		public void removeStore(Store store);  
 	}  
-`
+```
 
-`
+```
 	interface Store {  
 		public int checkAvailable(String product);  
 	}  
-`
+```
 
 Klijent prilikom pokretanja dobavlja serverski objekat. Host i port na kojem se
 nalazi serverski objekat se zadaju preko drugog argumenta komandne linije u
@@ -34,11 +34,11 @@ prodavnici sa zadatim identifikatorom iz xml fajla cije ime odgovara
 identifikatoru (npr. 001-ns-futoska.xml, 002-bg-usce.xml...)
 
 Ovi XML dokumenti zadovoljavaju sledeci DTD:  
-`
+```
 	<!--ELEMENT magacin (proizvod*) -->  
 	<!--ELEMENT proizvod (#PCDATA) -->  
 	<!--ATTLIST proizvod kolicina CDATA #REQUIRED-->  
-`
+```
 Posle uspesnog ucitavanja spiska proizvoda i povezivanja sa serverom, klijent
 se registruje i u petlji nudi mogucnost korisniku da izvrsava komande opisane
 u nastavku teksta.
