@@ -5,6 +5,6 @@ public interface Storage {
 
     int amount(String product);
 
-    int take(String product);
+    boolean take(String product);
 
 }
