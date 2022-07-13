@@ -36,7 +36,7 @@ public class SAXStorage extends DefaultHandler implements Storage {
     /**
      * Parse XML file from {@code filename}
      */
-    public boolean parseDocument(String filename) {
+    public void parseDocument(String filename) {
 
         // Get a factory
         SAXParserFactory factory = SAXParserFactory.newInstance();
@@ -48,11 +48,9 @@ public class SAXStorage extends DefaultHandler implements Storage {
             // Parse the file and also register this class for call backs
             parser.parse(filename, this);
 
-            return true;
             // Print any errors
         } catch (ParserConfigurationException | SAXException | IOException ex) {
             ex.printStackTrace();
-            return false;
         }
     }
 
@@ -129,10 +127,6 @@ public class SAXStorage extends DefaultHandler implements Storage {
     }
 
 
-    @Override
-    public boolean loadFile(String filename) {
-        return parseDocument(filename);
-    }
 
     @Override
     public int amount(String product) {

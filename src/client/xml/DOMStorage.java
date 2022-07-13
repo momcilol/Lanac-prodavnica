@@ -35,19 +35,15 @@ public class DOMStorage implements Storage {
 
     /**
      * Loads XML document from {@code filename}
-     *
-     * @return boolean
      */
-    public boolean loadDocument(String filename) {
+    public void loadDocument(String filename) {
         DocumentBuilderFactory factory = DocumentBuilderFactory.newInstance();
 
         try {
             DocumentBuilder builder = factory.newDocumentBuilder();
             this.document = builder.parse(filename);
-            return true;
         } catch (ParserConfigurationException | IOException | SAXException e) {
             e.printStackTrace();
-            return false;
         }
     }
 
@@ -98,11 +94,6 @@ public class DOMStorage implements Storage {
 
 
     @Override
-    public boolean loadFile(String filename) {
-        return loadDocument(filename);
-    }
-
-    @Override
     public int amount(String product) {
         return productsMap.get(product);
     }
@@ -111,9 +102,25 @@ public class DOMStorage implements Storage {
     public boolean take(String product) {
         if (productsMap.containsKey(product) && productsMap.get(product) > 0) {
             productsMap.put(product, productsMap.get(product) - 1);
+            updateDocument(product);
             saveDocument();
             return true;
         }
         return false;
     }
+
+    private void updateDocument(String product) {
+        Element root = document.getDocumentElement();
+        NodeList products = root.getElementsByTagName("proizvod");
+
+         for (int i = 0; i < products.getLength(); i++) {
+            Element tmp = (Element) products.item(i);
+            if (tmp.getTextContent().equals(product)) {
+                int amount = Integer.parseInt(tmp.getAttribute("kolicina"));
+                tmp.setAttribute("kolicina", String.valueOf(amount));
+                break;
+            }
+        }
+    }
+
 }

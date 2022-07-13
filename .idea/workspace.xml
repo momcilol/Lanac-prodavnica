@@ -4,9 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="28f29484-4704-4f91-b4dc-5ecf69de6e1c" name="Changes" comment="Started">
-      <change afterPath="$PROJECT_DIR$/src/client/xml/DOMStorage.java" afterDir="false" />
+    <list default="true" id="28f29484-4704-4f91-b4dc-5ecf69de6e1c" name="Changes" comment="Client &amp; Server side added&#10;Almost finished">
+      <change afterPath="$PROJECT_DIR$/res/001-ns-futoska.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/002-bg-usce.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/003-bg-slavija.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/004-kg-centar.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/res/005-ns-big.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/client/Store.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/client/StoreImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/server/Listeners.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/server/StoreServer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/server/StoreServerImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/xml/DOMStorage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/xml/DOMStorage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/client/xml/SAXStorage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/xml/SAXStorage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/client/xml/Storage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/xml/Storage.java" afterDir="false" />
     </list>
@@ -29,6 +40,9 @@
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="CurrentFile" />
+  </component>
   <component name="ProjectId" id="2AoKjJtjowmPYMzPCMpYipRkGLR" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -45,9 +59,45 @@
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;project.propCompiler&quot;
   }
 }</component>
+  <component name="RunManager" selected="Application.StoreImpl">
+    <configuration name="StoreImpl" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="client.StoreImpl" />
+      <module name="LanacProdavnica" />
+      <option name="PROGRAM_PARAMETERS" value="002-bg-usce localhost:1099" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="client.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="StoreServerImpl" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="server.StoreServerImpl" />
+      <module name="LanacProdavnica" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="server.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.StoreImpl" />
+        <item itemvalue="Application.StoreServerImpl" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -59,6 +109,8 @@
       <workItem from="1655670638405" duration="645000" />
       <workItem from="1657446138366" duration="5688000" />
       <workItem from="1657527574798" duration="5404000" />
+      <workItem from="1657687173433" duration="17124000" />
+      <workItem from="1657710218868" duration="514000" />
     </task>
     <task id="LOCAL-00001" summary="Started">
       <created>1657451980350</created>
@@ -86,6 +138,11 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Started" />
-    <option name="LAST_COMMIT_MESSAGE" value="Started" />
+    <MESSAGE value="Client &amp; Server side added&#10;Almost finished" />
+    <option name="LAST_COMMIT_MESSAGE" value="Client &amp; Server side added&#10;Almost finished" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
