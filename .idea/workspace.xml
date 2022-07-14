@@ -5,21 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="28f29484-4704-4f91-b4dc-5ecf69de6e1c" name="Changes" comment="Client &amp; Server side added&#10;Almost finished">
-      <change afterPath="$PROJECT_DIR$/res/001-ns-futoska.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/002-bg-usce.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/003-bg-slavija.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/004-kg-centar.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/res/005-ns-big.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/Store.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/client/StoreImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/server/Listeners.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/server/StoreServer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/server/StoreServerImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/001-ns-futoska.xml" beforeDir="false" afterPath="$PROJECT_DIR$/res/001-ns-futoska.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/res/005-ns-big.xml" beforeDir="false" afterPath="$PROJECT_DIR$/res/005-ns-big.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/client/StoreImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/StoreImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/client/xml/DOMStorage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/xml/DOMStorage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/client/xml/SAXStorage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/xml/SAXStorage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/client/xml/Storage.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/client/xml/Storage.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,11 +54,11 @@
     &quot;settings.editor.selected.configurable&quot;: &quot;project.propCompiler&quot;
   }
 }</component>
-  <component name="RunManager" selected="Application.StoreImpl">
+  <component name="RunManager" selected="Application.StoreServerImpl">
     <configuration name="StoreImpl" type="Application" factoryName="Application" singleton="false" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="client.StoreImpl" />
       <module name="LanacProdavnica" />
-      <option name="PROGRAM_PARAMETERS" value="002-bg-usce localhost:1099" />
+      <option name="PROGRAM_PARAMETERS" value="004-kg-centar localhost:1099" />
       <extension name="coverage">
         <pattern>
           <option name="PATTERN" value="client.*" />
@@ -110,7 +101,8 @@
       <workItem from="1657446138366" duration="5688000" />
       <workItem from="1657527574798" duration="5404000" />
       <workItem from="1657687173433" duration="17124000" />
-      <workItem from="1657710218868" duration="514000" />
+      <workItem from="1657710218868" duration="603000" />
+      <workItem from="1657743235025" duration="2373000" />
     </task>
     <task id="LOCAL-00001" summary="Started">
       <created>1657451980350</created>
@@ -119,7 +111,14 @@
       <option name="project" value="LOCAL" />
       <updated>1657451980350</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Client &amp; Server side added&#10;Almost finished">
+      <created>1657710790795</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1657710790796</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

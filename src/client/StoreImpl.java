@@ -84,6 +84,7 @@ public class StoreImpl extends UnicastRemoteObject implements Store {
 
                 if (tokens.length > 1) processCommand(tokens[0], tokens[1]);
                 System.out.print(">> ");
+                message = br.readLine();
             }
         }
         catch (IOException e) {

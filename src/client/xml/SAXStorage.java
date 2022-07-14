@@ -73,7 +73,7 @@ public class SAXStorage extends DefaultHandler implements Storage {
                     .collect(Collectors.joining(
                             "\n\n\t",
                             """
-                                    <?xml version="1.0" encoding="UTF-16"?><!DOCTYPE list SYSTEM "products.dtd">
+                                    <?xml version="1.0" encoding="UTF-16"?><!DOCTYPE magacin SYSTEM "products.dtd">
                                     <magacin>
                                     \t""",
                             "\n</magacin>"
@@ -122,7 +122,7 @@ public class SAXStorage extends DefaultHandler implements Storage {
 
         // Print title and year
         if (node.equals("proizvod")) {
-            this.productsMap.put(text, amount);
+            this.productsMap.put(text.trim(), amount);
         }
     }
 

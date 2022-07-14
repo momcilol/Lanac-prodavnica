@@ -55,7 +55,7 @@ public class DOMStorage implements Storage {
 
             Element product = (Element) products.item(i);
             int amount = Integer.parseInt(product.getAttribute("kolicina"));
-            this.productsMap.put(product.getTextContent(), amount);
+            this.productsMap.put(product.getTextContent().trim(), amount);
         }
     }
 
